@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MARPA INGENIERÍA E.I.R.L. - Servicios de mantenimiento industrial, electricidad, mecánica, soldadura e instalaciones.">
+<title>MARPA INGENIERÍA E.I.R.L. | Soluciones industriales</title>
+<style>
+:root{--navy:#102b46;--blue:#1769aa;--cyan:#22a6c7;--ink:#172536;--muted:#607080;--light:#f3f7fa;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #102b4612}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;color:var(--navy);font-size:20px;letter-spacing:.3px}.brand span{display:block;color:var(--cyan);font-size:10px;letter-spacing:3px}
+nav{display:flex;gap:24px;font-size:14px;font-weight:700;color:#33495e}nav a:hover{color:var(--blue)}
+.menu{display:none;border:0;background:var(--navy);color:white;padding:9px 13px;border-radius:8px;font-size:20px}
+.hero{color:#fff;background:linear-gradient(90deg,#0b2238ed,#0b2238a8),url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:560px;display:flex;align-items:center}
+.hero-content{max-width:720px;padding:76px 0}.eyebrow{color:#72d7eb;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(36px,6vw,62px);line-height:1.08;margin:16px 0}.hero p{font-size:18px;max-width:620px;color:#e6edf3}
+.btn{display:inline-block;background:var(--cyan);color:#fff;font-weight:800;padding:13px 22px;border-radius:7px;margin:10px 10px 0 0}.btn.outline{background:transparent;border:1px solid #ffffff99}
+section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head h2{font-size:34px;color:var(--navy);margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.about h2{font-size:34px;color:var(--navy);line-height:1.2}.about-img{width:100%;height:350px;object-fit:cover;border-radius:14px}
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}.point{background:var(--light);padding:15px;border-left:4px solid var(--cyan);border-radius:5px;font-weight:700}
+.services{background:var(--light)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px #102b4610}.card img{width:100%;height:190px;object-fit:cover}.card-body{padding:21px}.card h3{color:var(--navy);margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:24px;border:1px solid #e2eaf0;border-radius:12px}.num{width:38px;height:38px;border-radius:50%;background:var(--navy);color:white;display:grid;place-items:center;font-weight:800}.step h3{color:var(--navy);font-size:18px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+.contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}.contact p{color:#d5e1eb}
+form{background:white;color:var(--ink);padding:25px;border-radius:12px}label{display:block;font-weight:700;font-size:13px;margin:12px 0 5px}input,textarea,select{width:100%;padding:12px;border:1px solid #d5dfe7;border-radius:6px;font:inherit}textarea{min-height:100px;resize:vertical}button.submit{border:0;cursor:pointer;width:100%;font:inherit}
+footer{background:#091b2b;color:#c4d0da;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.faq{max-width:800px;margin:auto}.faq details{padding:17px 0;border-bottom:1px solid #e2eaf0}.faq summary{font-weight:800;color:var(--navy);cursor:pointer}.faq p{color:var(--muted)}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#20bd5a;color:#fff;padding:13px 18px;border-radius:40px;font-weight:800;box-shadow:0 5px 18px #0003;z-index:12}
+@media(max-width:800px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:18px 4%;flex-direction:column;gap:14px;box-shadow:0 8px 12px #0001}nav.open{display:flex}.menu{display:block}.about,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cards,.gallery,.steps,.points{grid-template-columns:1fr}.hero{min-height:500px}.hero-content{padding:55px 0}section{padding:58px 0}.about-img{height:250px}.gallery img{height:200px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio">MARPA INGENIERÍA<span>SOLUCIONES INDUSTRIALES</span></a>
+<button class="menu" aria-label="Abrir menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-content">
+<div class="eyebrow">Compromiso · Seguridad · Calidad</div>
+<h1>Soluciones de ingeniería para tu industria</h1>
+<p>Brindamos servicios de mantenimiento y soporte técnico para ayudar a que tus instalaciones, equipos y operaciones trabajen de manera segura y eficiente.</p>
+<a class="btn" href="#contacto">Solicitar cotización</a><a class="btn outline" href="#servicios">Conocer servicios</a>
+</div></section>
+<section id="nosotros"><div class="wrap about">
+<div><div class="eyebrow">Quiénes somos</div><h2>Ingeniería y mantenimiento con enfoque en resultados</h2>
+<p>En <strong>MARPA INGENIERÍA E.I.R.L.</strong> buscamos ser un aliado confiable para empresas que necesitan soluciones técnicas, mantenimiento oportuno y atención responsable.</p>
+<p>Trabajamos con planificación, evaluación de riesgos y atención a las necesidades de cada cliente.</p>
+<div class="points"><div class="point">Seguridad en cada trabajo</div><div class="point">Atención responsable</div><div class="point">Soluciones prácticas</div><div class="point">Compromiso con la calidad</div></div></div>
+<img class="about-img" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85" alt="Personal técnico trabajando en un entorno industrial">
+</div></section>
+<section class="services" id="servicios"><div class="wrap"><div class="section-head"><div class="eyebrow">Qué hacemos</div><h2>Nuestros servicios</h2><p>Servicios que pueden adaptarse a los requerimientos de plantas, almacenes, talleres e instalaciones industriales.</p></div>
+<div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80" alt="Instalaciones eléctricas"><div class="card-body"><h3>Mantenimiento eléctrico</h3><p>Inspección, diagnóstico, mantenimiento de tableros, motores, circuitos e instalaciones eléctricas.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=800&q=80" alt="Mantenimiento mecánico"><div class="card-body"><h3>Mantenimiento mecánico</h3><p>Revisión y mantenimiento de equipos, componentes mecánicos y sistemas auxiliares.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Trabajo de soldadura"><div class="card-body"><h3>Soldadura y fabricación</h3><p>Trabajos de soldadura, reparación, fabricación y adecuación de estructuras metálicas.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80" alt="Instalación industrial"><div class="card-body"><h3>Instalaciones industriales</h3><p>Apoyo en montaje, adecuaciones y mejoras de instalaciones y áreas de trabajo.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Técnico realizando mantenimiento"><div class="card-body"><h3>Mantenimiento general</h3><p>Atención de trabajos correctivos y preventivos según las necesidades del cliente.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Almacén de repuestos"><div class="card-body"><h3>Suministro de repuestos</h3><p>Apoyo en la identificación y suministro de materiales, accesorios y repuestos.</p></div></article>
+</div></div></section>
+<section id="proceso"><div class="wrap"><div class="section-head"><div class="eyebrow">Nuestro método</div><h2>Cómo trabajamos</h2><p>Un proceso ordenado para atender cada requerimiento.</p></div>
+<div class="steps"><div class="step"><div class="num">1</div><h3>Escuchamos</h3><p>Conocemos la necesidad y el alcance del servicio.</p></div><div class="step"><div class="num">2</div><h3>Evaluamos</h3><p>Revisamos condiciones, recursos, riesgos y tiempos.</p></div><div class="step"><div class="num">3</div><h3>Ejecutamos</h3><p>Realizamos el trabajo coordinando con el cliente.</p></div><div class="step"><div class="num">4</div><h3>Entregamos</h3><p>Comunicamos los resultados y recomendaciones.</p></div></div></div></section>
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">Nuestro trabajo</div><h2>Galería referencial</h2><p>Estas imágenes son ilustrativas. Se recomienda reemplazarlas por fotografías propias de los trabajos realizados por MARPA.</p></div>
+<div class="gallery"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=700&q=80" alt="Trabajo técnico industrial"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" alt="Inspección técnica"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=80" alt="Soldadura industrial"></div></div></section>
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">Consultas</div><h2>Preguntas frecuentes</h2></div><div class="faq">
+<details><summary>¿Cómo puedo solicitar una cotización?</summary><p>Completa el formulario de contacto o escríbenos directamente por WhatsApp indicando el servicio que necesitas.</p></details>
+<details><summary>¿Atienden trabajos para empresas?</summary><p>La página está orientada a presentar servicios para empresas e instalaciones industriales. El alcance se coordina según cada requerimiento.</p></details>
+<details><summary>¿Puedo enviar fotografías o detalles del trabajo?</summary><p>Sí. Puedes enviar información y fotografías por WhatsApp para facilitar una evaluación inicial.</p></details>
+</div></div></section>
+<section class="contact" id="contacto"><div class="wrap"><div class="section-head"><div class="eyebrow">Hablemos</div><h2>Solicita una cotización</h2><p>Cuéntanos qué necesitas y coordinaremos contigo.</p></div>
+<div class="contact-grid"><div><h3>MARPA INGENIERÍA E.I.R.L.</h3><p>Servicios de ingeniería, mantenimiento y soporte industrial.</p><p><strong>WhatsApp:</strong> +51 969 762 824</p><a class="btn" href="https://wa.me/51969762824" target="_blank" rel="noopener">Escribir por WhatsApp</a></div>
+<form id="quote"><label for="nombre">Nombre</label><input id="nombre" required placeholder="Tu nombre"><label for="empresa">Empresa (opcional)</label><input id="empresa" placeholder="Nombre de tu empresa"><label for="servicio">Servicio requerido</label><select id="servicio"><option>Mantenimiento eléctrico</option><option>Mantenimiento mecánico</option><option>Soldadura y fabricación</option><option>Instalaciones industriales</option><option>Mantenimiento general</option><option>Suministro de repuestos</option><option>Otro</option></select><label for="detalle">Describe brevemente tu requerimiento</label><textarea id="detalle" placeholder="Cuéntanos qué trabajo necesitas..."></textarea><button class="btn submit" type="submit">Enviar solicitud por WhatsApp</button></form>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> MARPA INGENIERÍA E.I.R.L. Todos los derechos reservados.</span><span>Soluciones industriales</span></div></footer>
+<a class="whatsapp" href="https://wa.me/51969762824" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault();const n=document.getElementById('nombre').value;const em=document.getElementById('empresa').value;const s=document.getElementById('servicio').value;const d=document.getElementById('detalle').value;const msg=`Hola, MARPA INGENIERÍA. Mi nombre es ${n}. Empresa: ${em||'No indicada'}. Servicio: ${s}. Detalle: ${d||'Quisiera más información.'}`;window.open('https://wa.me/51969762824?text='+encodeURIComponent(msg),'_blank');});
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+</script>
+</body></html>
